@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="src/icons/discord.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord layout</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="containerGrid">
+      <nav class="navList">
+        <div class="containerDiscordIcon">
+          <img
+            src="src/icons/discord.svg"
+            alt="discord icon"
+            class="iconDiscord"
+          />
+          <div class="pop-up-nav">
+            <span class="triangulo"></span>
+            <p>Mensajes directos</p>
+          </div>
+        </div>
+        <div class="line-nav"></div>
+        <ul class="servers-list">
+          <li>
+            <img src="/images/lena-profile.jpg" alt="lena-profile" />
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Lena</p>
+            </div>
+          </li>
+          <li>
+            <img src="/images/hinata-profile.jpg" alt="hinata-profile" />
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Hinata</p>
+            </div>
+          </li>
+          <li>
+            <img src="/images/shawn-profile.jpg" alt="shawn-profile" />
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Shawn</p>
+            </div>
+          </li>
+          <li>
+            <img src="/images/tanya-profile.jpg" alt="tanya-profile" />
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Tanya</p>
+            </div>
+          </li>
+          <li>
+            <img src="/images/ange-profile.png" alt="ange-profile" />
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Ange</p>
+            </div>
+          </li>
+          <li class="icon-nav-special">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-plus"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 5l0 14"></path>
+              <path d="M5 12l14 0"></path>
+            </svg>
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Añadir un servidor</p>
+            </div>
+          </li>
+          <li class="icon-nav-special">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-safari"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M8 16l2 -6l6 -2l-2 6l-6 2"></path>
+              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+            </svg>
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Explora servidores descubriles</p>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="messages-container">
+        <p>messages</p>
+      </div>
+      <header class="header-container">
+        <p>header</p>
+      </header>
+      <section class="section-container">
+        <p>section</p>
+      </section>
+      <aside class="aside-section">
+        <p>aside</p>
+      </aside>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
