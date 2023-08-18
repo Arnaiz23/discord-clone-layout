@@ -75,6 +75,7 @@ body {
 
 .pop-up-nav {
   pointer-events: none;
+
   position: absolute;
   left: 74px;
 
@@ -125,8 +126,8 @@ body {
 }
 
 .container-discord-icon:hover .pop-up-nav {
-  opacity: 100%;
   pointer-events: all;
+  opacity: 100%;
 }
 
 .line-nav {
@@ -202,9 +203,13 @@ body {
 
 /* MESSAGES */
 .messages-container {
+  display: flex;
   grid-area: messages;
+  flex-direction: column;
+
   width: 100%;
   height: 100%;
+
   background-color: #2b2d31;
 }
 
@@ -231,9 +236,10 @@ body {
 
 .messages-section {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   width: 100%;
   padding: 7px 0;
@@ -290,17 +296,19 @@ body {
 }
 
 .messages-row-friends {
+  user-select: none;
   width: 100%;
   color: #7c8985;
-  user-select: none;
 }
 
+/* TODO: refactor this selectors for classnames???? */
 .messages-row-friends > header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   width: 90%;
   margin: 15px auto;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .messages-row-friends > header > h3 {
@@ -314,6 +322,63 @@ body {
 
 .messages-row-friends:hover path {
   fill: #ddd;
+}
+
+.messages-footer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 0;
+
+  background-color: #232428;
+}
+
+.messages-footer-image {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.messages-footer-image > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.messages-footer-image-online {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+
+  display: grid;
+  place-items: center;
+
+  width: 14px;
+  height: 14px;
+
+  background-color: #23a55a;
+  border: 3px solid #232428;
+  border-radius: 100%;
+}
+
+.messages-footer-user-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.messages-footer-user-state {
+  font-size: 12px;
+  color: #939aa3;
+}
+
+.messages-footer-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* HEADER */
