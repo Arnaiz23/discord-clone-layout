@@ -7,6 +7,9 @@ Repositorie where I create the discord layout with HTML, CSS and JS.
 ### Nav
 
 ![Discord layout nav preview](./previews-gh/discord-layout-nav.png)
+
+### Messages
+
 ![Discord layout messages preview](./previews-gh/discord-layout-messages.png)
 
 ## Missing
