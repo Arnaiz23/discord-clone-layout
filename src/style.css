@@ -80,6 +80,22 @@ body {
   position: absolute;
 }
 
+.notification-number {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  z-index: 10;
+  background-color: #f23f44;
+  border-radius: 100%;
+  font-size: 12px;
+  font-weight: 600;
+  border: 5px solid #1e1f22;
+}
+
 .containerDiscordIcon:hover .pop-up-nav {
   opacity: 1;
 }
