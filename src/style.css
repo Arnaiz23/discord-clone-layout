@@ -16,7 +16,7 @@ body {
 .container-grid {
   display: grid;
   grid-template: "nav messages header header" 50px "nav messages main aside" 1fr / 80px 250px 1200px 1fr;
-  width: 100%;
+  width: 10px;
   min-height: 100dvh;
 }
 
@@ -74,6 +74,7 @@ body {
 }
 
 .pop-up-nav {
+  pointer-events: none;
   position: absolute;
   left: 74px;
 
@@ -125,6 +126,7 @@ body {
 
 .container-discord-icon:hover .pop-up-nav {
   opacity: 100%;
+  pointer-events: all;
 }
 
 .line-nav {
@@ -204,6 +206,114 @@ body {
   width: 100%;
   height: 100%;
   background-color: #2b2d31;
+}
+
+.messages-header {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.messages-search-input {
+  width: 90%;
+  padding: 5px;
+
+  background-color: #1e1f22;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.messages-line {
+  border-top: 1px solid #1e1f22;
+}
+
+.messages-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 7px 0;
+}
+
+.messages-row {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.messages-row-options {
+  cursor: pointer;
+
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+
+  font-weight: bold;
+  color: #939aa3;
+
+  border-radius: 5px;
+}
+
+.messages-row-options path {
+  fill: #939aa3;
+}
+
+.messages-row-options-active {
+  color: #fff;
+  background-color: #404249;
+}
+
+.messages-row-options-active path {
+  fill: #fff;
+}
+
+.messages-row-options:hover {
+  color: #c1c3c7;
+  background-color: #38393b;
+}
+
+.messages-row-options:hover path {
+  fill: #c1c3c7;
+}
+
+.messages-row-friends {
+  width: 100%;
+  color: #7c8985;
+  user-select: none;
+}
+
+.messages-row-friends > header {
+  display: flex;
+  width: 90%;
+  margin: 15px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.messages-row-friends > header > h3 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.messages-row-friends:hover {
+  color: #ddd;
+}
+
+.messages-row-friends:hover path {
+  fill: #ddd;
 }
 
 /* HEADER */
