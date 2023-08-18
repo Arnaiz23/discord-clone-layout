@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -10,94 +10,103 @@
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Nunito Sans", "Space Grotesk", sans-serif;
 }
 
-.containerGrid {
+.container-grid {
+  display: grid;
+  grid-template: "nav messages header header" 50px "nav messages main aside" 1fr / 80px 250px 1200px 1fr;
   width: 100%;
   min-height: 100dvh;
-  display: grid;
-  grid-template-areas:
-    "nav messages header header"
-    "nav messages main aside";
-  grid-template-columns: 80px 250px 1200px 1fr;
-  grid-template-rows: 50px 1fr;
 }
 
 /* NAV */
 
-.navList {
-  grid-area: "nav";
+.nav-list {
   display: flex;
+  grid-area: nav;
   flex-direction: column;
-  justify-items: flex-start;
-  align-items: center;
-  padding: 10px 0;
   gap: 10px;
-  background-color: #1e1f22;
+  align-items: center;
+  justify-items: flex-start;
 
-  height: 100dvh;
   width: 80px;
+  height: 100dvh;
+  padding: 10px 0;
+
+  background-color: #1e1f22;
 }
 
-.iconDiscord {
+.icon-discord {
   width: 30px;
 }
 
-.containerDiscordIcon {
-  background: #5865f2;
+.container-discord-icon {
+  position: relative;
+
+  display: grid;
+  place-items: center;
+
   width: 50px;
   height: 50px;
   padding: 5px;
+
+  background: #5865f2;
   border-radius: 10px;
-  display: grid;
-  place-items: center;
-  position: relative;
 }
 
 .pop-up-nav {
   position: absolute;
   left: 70px;
-  max-width: 200px;
-  width: max-content;
-  background-color: #000;
-  padding: 10px;
-  border-radius: 10px;
-  opacity: 0;
-  transition: opacity ease 0.5s;
+
   display: grid;
   place-items: center;
+
+  width: max-content;
+  max-width: 200px;
+  padding: 10px;
+
+  opacity: 0%;
+  background-color: #000;
+  border-radius: 10px;
+
+  transition: opacity ease 0.5s;
 }
 
 .triangulo {
+  position: absolute;
+  left: -6px;
+
   width: 0;
   height: 0;
-  border-right: 6px solid #000;
+
   border-top: 4px solid transparent;
+  border-right: 6px solid #000;
   border-bottom: 4px solid transparent;
-  left: -6px;
-  position: absolute;
 }
 
 .notification-number {
-  width: 25px;
-  height: 25px;
+  position: absolute;
+  z-index: 10;
+  right: -5px;
+  bottom: -5px;
+
   display: grid;
   place-items: center;
-  position: absolute;
-  bottom: -5px;
-  right: -5px;
-  z-index: 10;
-  background-color: #f23f44;
-  border-radius: 100%;
-  font-size: 12px;
+
+  width: 25px;
+  height: 25px;
+
+  font-size: 13px;
   font-weight: 600;
+
+  background-color: #f23f44;
   border: 5px solid #1e1f22;
+  border-radius: 100%;
 }
 
-.containerDiscordIcon:hover .pop-up-nav {
-  opacity: 1;
+.container-discord-icon:hover .pop-up-nav {
+  opacity: 100%;
 }
 
 .line-nav {
@@ -107,25 +116,41 @@ body {
 }
 
 .servers-list {
-  height: 100%;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px;
+
+  height: 100%;
 }
 
 .servers-list > li {
-  width: 70%;
-  height: 56px;
-  margin: 0 auto;
+  cursor: pointer;
+
+  position: relative;
+
   /* overflow: hidden; */
   display: grid;
   place-items: center;
-  transition: border-radius ease 0.3s;
-  position: relative;
+
+  width: 70%;
+  height: 56px;
+  margin: 0 auto;
+
   border-radius: 100%;
-  cursor: pointer;
+
+  transition: border-radius ease 0.3s;
+}
+
+.servers-list > li > img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  border-radius: 100%;
+
+  transition: border-radius ease 0.3s;
 }
 
 .servers-list > li:hover,
@@ -135,15 +160,7 @@ body {
 }
 
 .servers-list > li:hover .pop-up-nav {
-  opacity: 1;
-}
-
-.servers-list > li > img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 100%;
-  height: 100%;
-  transition: border-radius ease 0.3s;
+  opacity: 100%;
 }
 
 .icon-nav-special {
@@ -151,8 +168,8 @@ body {
 }
 
 .icon-nav-special > svg {
-  transition: stroke ease 0.3s;
   stroke: #249f57;
+  transition: stroke ease 0.3s;
 }
 
 .icon-nav-special:hover {
@@ -166,9 +183,9 @@ body {
 /* MESSAGES */
 .messages-container {
   grid-area: messages;
-  background-color: #2b2d31;
   width: 100%;
   height: 100%;
+  background-color: #2b2d31;
 }
 
 /* HEADER */
@@ -191,4 +208,3 @@ body {
   width: 100%;
   height: 100%;
 }
-
