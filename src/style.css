@@ -15,7 +15,7 @@ body {
 
 .container-grid {
   display: grid;
-  grid-template: "nav messages header header" 50px "nav messages main aside" 1fr / 80px 250px 1200px 1fr;
+  grid-template: "nav messages header header" 50px "nav messages main aside" 1fr / 75px 240px 1200px 1fr;
   width: 10px;
   min-height: 100dvh;
 }
@@ -30,7 +30,7 @@ body {
   align-items: center;
   justify-content: flex-start;
 
-  width: 80px;
+  width: 100%;
   height: 100dvh;
   padding: 10px 0;
 
@@ -347,13 +347,29 @@ body {
   align-items: center;
   justify-content: center;
 
-  padding: 10px 0;
+  padding: 3px 10px;
 
   background-color: #232428;
 }
 
 .messages-footer > * {
   cursor: pointer;
+}
+
+.messages-footer-userdata {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  padding-left: 2px;
+  border-radius: 5px;
+}
+
+.messages-footer-userdata:hover {
+  background-color: #404249;
 }
 
 .messages-footer-image {
@@ -397,7 +413,6 @@ body {
 
 .messages-footer-icons {
   display: flex;
-  gap: 10px;
   align-items: center;
   justify-content: center;
 }
@@ -405,7 +420,7 @@ body {
 .messages-footer-icons-container {
   display: grid;
   place-items: center;
-  padding: 3px;
+  padding: 5px;
   border-radius: 5px;
 }
 
