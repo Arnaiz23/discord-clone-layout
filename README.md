@@ -23,4 +23,4 @@ Repositorie where I create the discord layout with HTML, CSS and JS.
 * [ ] aside
 * [ ] md submenu
 * [ ] inbox submenu
-* [ ] navbar server hover left
+* [x] navbar server hover left

@@ -184,7 +184,7 @@ body {
   background-color: #fff;
   border-radius: 10px;
   transform: translateX(-100%);
-  transition: transform ease .5s;
+  transition: transform ease 0.5s;
 }
 
 .servers-list > li:hover .servers-hover-border {
@@ -352,6 +352,10 @@ body {
   background-color: #232428;
 }
 
+.messages-footer > * {
+  cursor: pointer;
+}
+
 .messages-footer-image {
   position: relative;
   width: 40px;
@@ -396,6 +400,21 @@ body {
   gap: 10px;
   align-items: center;
   justify-content: center;
+}
+
+.messages-footer-icons-container {
+  display: grid;
+  place-items: center;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.messages-footer-icons-container:hover {
+  background-color: #404249;
+}
+
+.messages-footer-icons-container:hover .messages-footer-icons-svg {
+  fill: #fff;
 }
 
 /* HEADER */
