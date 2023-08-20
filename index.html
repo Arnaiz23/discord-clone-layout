@@ -102,7 +102,6 @@
             class="messages-search-input"
           />
         </header>
-        <div class="messages-line"></div>
         <section class="messages-section">
           <article class="messages-row">
             <div class="messages-row-options messages-row-options-active">
@@ -172,21 +171,39 @@
             <li>Todos</li>
             <li>Pendiente</li>
             <li>Bloqueado</li>
-            <li>Añadir amigo</li>
+            <li class="header-friends-list-green">Añadir amigo</li>
           </ul>
         </div>
         <div class="header-content">
-            <svg>
+          <div class="header-content-md">
+            <svg class="header-content-icon-popup">
               <use href="./src/icons/icons.svg#message" />
             </svg>
+            <div class="header-content-popup">
+              <span class="triangulo-top"></span>
+              <p>Nuevo grupo de MD</p>
+            </div>
+          </div>
           <span class="header-content-line"></span>
           <div class="header-content-discord">
-            <svg>
-              <use href="./src/icons/icons.svg#inbox" />
-            </svg>
-            <svg>
-              <use href="./src/icons/icons.svg#question" />
-            </svg>
+            <div class="header-content-md">
+              <svg class="header-content-icon-popup">
+                <use href="./src/icons/icons.svg#inbox" />
+              </svg>
+              <div class="header-content-popup">
+                <span class="triangulo-top"></span>
+                <p>Bandeja de entrada</p>
+              </div>
+            </div>
+            <div class="header-content-md">
+              <svg class="header-content-icon-popup">
+                <use href="./src/icons/icons.svg#question" />
+              </svg>
+              <div class="header-content-popup">
+                <span class="triangulo-top"></span>
+                <p>Ayuda</p>
+              </div>
+            </div>
           </div>
         </div>
       </header>

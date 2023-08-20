@@ -17,7 +17,7 @@ Repositorie where I create the discord layout with HTML, CSS and JS.
 * [ ] footer messages icons silent
 * [ ] footer messages hover
 * [ ] chat user messages
-* [ ] header
+* [x] header
 * [ ] main
 * [ ] main user more
 * [ ] aside
