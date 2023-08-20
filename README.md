@@ -12,6 +12,10 @@ Repositorie where I create the discord layout with HTML, CSS and JS.
 
 ![Discord layout messages preview](./previews-gh/discord-layout-messages.png)
 
+### Header
+
+![Discord layout header preview](./previews-gh/discord-layout-header.png)
+
 ## Missing
 
 * [ ] footer messages icons silent
