@@ -13,6 +13,12 @@ body {
   font-family: "Nunito Sans", "Space Grotesk", sans-serif;
 }
 
+svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+}
+
 .container-grid {
   display: grid;
   grid-template: "nav messages header header" 50px "nav messages main aside" 1fr / 75px 240px 1200px 1fr;
@@ -177,13 +183,14 @@ body {
 .servers-hover-border {
   position: absolute;
   left: -20px;
+  transform: translateX(-100%);
 
   width: 10px;
   height: 40%;
 
   background-color: #fff;
   border-radius: 10px;
-  transform: translateX(-100%);
+
   transition: transform ease 0.5s;
 }
 
@@ -333,17 +340,21 @@ body {
   font-weight: bold;
 }
 
+.messages-row-friends svg {
+  stroke: #939aa3;
+}
+
 .messages-row-friends:hover {
   color: #ddd;
 }
 
-.messages-row-friends:hover path {
-  fill: #ddd;
+.messages-row-friends:hover svg {
+  stroke: #ddd;
 }
 
 .messages-footer {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
   justify-content: center;
 
@@ -357,14 +368,16 @@ body {
 }
 
 .messages-footer-userdata {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+
   width: 100%;
   height: 90%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
   padding: 5px;
   padding-left: 2px;
+
   border-radius: 5px;
 }
 
@@ -426,10 +439,6 @@ body {
 
 .messages-footer-icons-container:hover {
   background-color: #404249;
-}
-
-.messages-footer-icons-container:hover .messages-footer-icons-svg {
-  fill: #fff;
 }
 
 /* HEADER */

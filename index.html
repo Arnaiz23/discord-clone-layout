@@ -1,187 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="src/icons/discord.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord layout</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="src/icons/discord.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Discord layout</title>
-  <link rel="stylesheet" href="./src/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Space+Grotesk:wght@500&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-  <main class="container-grid">
-    <nav class="nav-list">
-      <div class="container-discord-brand">
-        <div class="container-discord-icon">
-          <span class="discord-icon-border"></span>
-          <img src="src/icons/discord.svg" alt="discord icon" class="icon-discord" />
-          <div class="pop-up-nav">
-            <span class="triangulo"></span>
-            <p>Mensajes directos</p>
+  <body>
+    <main class="container-grid">
+      <nav class="nav-list">
+        <div class="container-discord-brand">
+          <div class="container-discord-icon">
+            <span class="discord-icon-border"></span>
+            <svg>
+              <use href="src/icons/icons.svg#discord" />
+            </svg>
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Mensajes directos</p>
+            </div>
           </div>
         </div>
+        <div class="line-nav"></div>
+        <ul class="servers-list">
+          <li>
+            <span class="servers-hover-border"></span>
+            <img src="/images/lena-profile.jpg" alt="lena-profile" />
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Lena</p>
+            </div>
+          </li>
+          <li>
+            <span class="servers-hover-border"></span>
+            <img src="/images/hinata-profile.jpg" alt="hinata-profile" />
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Hinata</p>
+            </div>
+          </li>
+          <li>
+            <span class="servers-hover-border"></span>
+            <img src="/images/shawn-profile.jpg" alt="shawn-profile" />
+            <span class="notification-number">3</span>
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Shawn</p>
+            </div>
+          </li>
+          <li>
+            <span class="servers-hover-border"></span>
+            <img src="/images/tanya-profile.jpg" alt="tanya-profile" />
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Tanya</p>
+            </div>
+          </li>
+          <li>
+            <span class="servers-hover-border"></span>
+            <img src="/images/ange-profile.png" alt="ange-profile" />
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Ange</p>
+            </div>
+          </li>
+          <li class="icon-nav-special">
+            <svg>
+              <use href="./src/icons/icons.svg#plus" />
+            </svg>
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Añadir un servidor</p>
+            </div>
+          </li>
+          <li class="icon-nav-special">
+            <span class="servers-hover-border"></span>
+            <svg>
+              <use href="./src/icons/icons.svg#safari" />
+            </svg>
+            <div class="pop-up-nav">
+              <span class="triangulo"></span>
+              <p>Explora servidores descubriles</p>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="messages-container">
+        <header class="messages-header">
+          <input
+            type="text"
+            value=""
+            placeholder="Busca o inicia una conversación"
+            class="messages-search-input"
+          />
+        </header>
+        <div class="messages-line"></div>
+        <section class="messages-section">
+          <article class="messages-row">
+            <div class="messages-row-options messages-row-options-active">
+              <svg>
+                <use href="./src/icons/icons.svg#friends" />
+              </svg>
+              <p>Amigos</p>
+            </div>
+            <div class="messages-row-options">
+              <svg>
+                <use href="./src/icons/icons.svg#friends" />
+              </svg>
+              <p>Nitro</p>
+            </div>
+          </article>
+          <article class="messages-row-friends">
+            <header>
+              <h3>MENSAJES DIRECTOS</h3>
+              <svg>
+                <use href="./src/icons/icons.svg#plus" />
+              </svg>
+            </header>
+          </article>
+        </section>
+        <footer class="messages-footer">
+          <div class="messages-footer-userdata">
+            <div class="messages-footer-image">
+              <span class="messages-footer-image-online"></span>
+              <img src="/images/remi-remi.jpg" alt="remi-profile" />
+            </div>
+            <div class="messages-footer-user">
+              <p class="messages-footer-user-name">arnaiz2311</p>
+              <p class="messages-footer-user-state">En línea</p>
+            </div>
+          </div>
+          <div class="messages-footer-icons">
+            <div class="messages-footer-icons-container">
+              <svg>
+                <use href="./src/icons/icons.svg#mic" />
+              </svg>
+            </div>
+            <div class="messages-footer-icons-container">
+              <svg>
+                <use href="./src/icons/icons.svg#headphones" />
+              </svg>
+            </div>
+            <div class="messages-footer-icons-container">
+              <svg>
+                <use href="./src/icons/icons.svg#settings" />
+              </svg>
+            </div>
+          </div>
+        </footer>
       </div>
-      <div class="line-nav"></div>
-      <ul class="servers-list">
-        <li>
-          <span class="servers-hover-border"></span>
-          <img src="/images/lena-profile.jpg" alt="lena-profile" />
-          <div class="pop-up-nav">
-            <span class="triangulo"></span>
-            <p>Lena</p>
-          </div>
-        </li>
-        <li>
-          <span class="servers-hover-border"></span>
-          <img src="/images/hinata-profile.jpg" alt="hinata-profile" />
-          <div class="pop-up-nav">
-            <span class="triangulo"></span>
-            <p>Hinata</p>
-          </div>
-        </li>
-        <li>
-          <span class="servers-hover-border"></span>
-          <img src="/images/shawn-profile.jpg" alt="shawn-profile" />
-          <span class="notification-number">3</span>
-          <div class="pop-up-nav">
-            <span class="triangulo"></span>
-            <p>Shawn</p>
-          </div>
-        </li>
-        <li>
-          <span class="servers-hover-border"></span>
-          <img src="/images/tanya-profile.jpg" alt="tanya-profile" />
-          <div class="pop-up-nav">
-            <span class="triangulo"></span>
-            <p>Tanya</p>
-          </div>
-        </li>
-        <li>
-          <span class="servers-hover-border"></span>
-          <img src="/images/ange-profile.png" alt="ange-profile" />
-          <div class="pop-up-nav">
-            <span class="triangulo"></span>
-            <p>Ange</p>
-          </div>
-        </li>
-        <li class="icon-nav-special">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="24" height="24"
-            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="#fff" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M12 5l0 14"></path>
-            <path d="M5 12l14 0"></path>
-          </svg>
-          <div class="pop-up-nav">
-            <span class="triangulo"></span>
-            <p>Añadir un servidor</p>
-          </div>
-        </li>
-        <li class="icon-nav-special">
-          <span class="servers-hover-border"></span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-safari" width="24"
-            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M8 16l2 -6l6 -2l-2 6l-6 2"></path>
-            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-          </svg>
-          <div class="pop-up-nav">
-            <span class="triangulo"></span>
-            <p>Explora servidores descubriles</p>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <div class="messages-container">
-      <header class="messages-header">
-        <input type="text" value="" placeholder="Busca o inicia una conversación" class="messages-search-input" />
+
+      <header class="header-container">
+        <p>header</p>
       </header>
-      <div class="messages-line"></div>
-      <section class="messages-section">
-        <article class="messages-row">
-          <div class="messages-row-options messages-row-options-active">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M16 17v2H2v-2s0-4 7-4s7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 0 0-1.93.59a5 5 0 0 1 0 5.82A3.39 3.39 0 0 0 15 11a3.5 3.5 0 0 0 0-7Z" />
-            </svg>
-            <p>Amigos</p>
-          </div>
-          <div class="messages-row-options">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path fill="white"
-                d="M16 17v2H2v-2s0-4 7-4s7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 0 0-1.93.59a5 5 0 0 1 0 5.82A3.39 3.39 0 0 0 15 11a3.5 3.5 0 0 0 0-7Z" />
-            </svg>
-            <p>Nitro</p>
-          </div>
-        </article>
-        <article class="messages-row-friends">
-          <header>
-            <h3>MENSAJES DIRECTOS</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-              <path fill="#7c8985" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z" />
-            </svg>
-          </header>
-        </article>
+      <section class="section-container">
+        <p>section</p>
       </section>
-      <footer class="messages-footer">
-        <div class="messages-footer-userdata">
-          <div class="messages-footer-image">
-            <span class="messages-footer-image-online"></span>
-            <img src="/images/remi-remi.jpg" alt="remi-profile" />
-          </div>
-          <div class="messages-footer-user">
-            <p class="messages-footer-user-name">arnaiz2311</p>
-            <p class="messages-footer-user-state">En línea</p>
-          </div>
-        </div>
-        <div class="messages-footer-icons">
-          <div class="messages-footer-icons-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-              <path fill="#939aa3" class="messages-footer-icons-svg"
-                d="M12 14q-1.25 0-2.125-.875T9 11V5q0-1.25.875-2.125T12 2q1.25 0 2.125.875T15 5v6q0 1.25-.875 2.125T12 14Zm-1 7v-3.075q-2.6-.35-4.3-2.325T5 11h2q0 2.075 1.463 3.538T12 16q2.075 0 3.538-1.463T17 11h2q0 2.625-1.7 4.6T13 17.925V21h-2Z" />
-            </svg>
-          </div>
-          <div class="messages-footer-icons-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-              <path fill="#939aa3" class="messages-footer-icons-svg"
-                d="M4 12h3a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7C2 6.477 6.477 2 12 2s10 4.477 10 10v7a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h3a8 8 0 1 0-16 0Z" />
-            </svg>
-          </div>
-          <div class="messages-footer-icons-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
-              <mask id="ipSSetting0">
-                <g fill="none" stroke-linejoin="round" stroke-width="4">
-                  <path fill="#fff" stroke="#fff"
-                    d="M36.686 15.171a15.37 15.37 0 0 1 2.529 6.102H44v5.454h-4.785a15.37 15.37 0 0 1-2.529 6.102l3.385 3.385l-3.857 3.857l-3.385-3.385a15.37 15.37 0 0 1-6.102 2.529V44h-5.454v-4.785a15.37 15.37 0 0 1-6.102-2.529l-3.385 3.385l-3.857-3.857l3.385-3.385a15.37 15.37 0 0 1-2.529-6.102H4v-5.454h4.785a15.37 15.37 0 0 1 2.529-6.102l-3.385-3.385l3.857-3.857l3.385 3.385a15.37 15.37 0 0 1 6.102-2.529V4h5.454v4.785a15.37 15.37 0 0 1 6.102 2.529l3.385-3.385l3.857 3.857l-3.385 3.385Z" />
-                  <path fill="#000" stroke="#000" d="M24 29a5 5 0 1 0 0-10a5 5 0 0 0 0 10Z" />
-                </g>
-              </mask>
-              <path fill="#939aa3" d="M0 0h48v48H0z" mask="url(#ipSSetting0)" class="messages-footer-icons-svg" />
-            </svg>
-          </div>
-        </div>
-      </footer>
-    </div>
+      <aside class="aside-section">
+        <p>aside</p>
+      </aside>
+    </main>
 
-    <header class="header-container">
-      <p>header</p>
-    </header>
-    <section class="section-container">
-      <p>section</p>
-    </section>
-    <aside class="aside-section">
-      <p>aside</p>
-    </aside>
-  </main>
-
-  <script type="module" src="src/main.js"></script>
-</body>
-
+    <script type="module" src="src/main.js"></script>
+  </body>
 </html>
