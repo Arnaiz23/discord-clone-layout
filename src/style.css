@@ -349,6 +349,32 @@ svg {
   stroke: #939aa3;
 }
 
+.messages-row-friends-icon {
+  cursor: pointer;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.messages-row-friends-icon-popup {
+  position: absolute;
+  background-color: black;
+  width: max-content;
+  color: #fff;
+  top: -36px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity ease 0.5s;
+  pointer-events: none;
+}
+
+.messages-row-friends-icon:hover .messages-row-friends-icon-popup {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .messages-row-friends:hover {
   color: #ddd;
 }
@@ -454,7 +480,7 @@ svg {
   padding: 5px 10px;
   border-radius: 5px;
   opacity: 0;
-  transition: opacity ease .5s;
+  transition: opacity ease 0.5s;
   pointer-events: none;
   width: max-content;
 }
