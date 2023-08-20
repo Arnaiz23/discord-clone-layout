@@ -15,7 +15,7 @@ Repositorie where I create the discord layout with HTML, CSS and JS.
 ## Missing
 
 * [ ] footer messages icons silent
-* [ ] footer messages hover
+* [x] footer messages hover
 * [ ] chat user messages
 * [x] header
 * [ ] main
