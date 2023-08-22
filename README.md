@@ -22,9 +22,9 @@ Repositorie where I create the discord layout with HTML, CSS and JS.
 * [x] footer messages hover
 * [ ] chat user messages
 * [x] header
-* [ ] main
+* [x] main
 * [ ] main user more
-* [ ] aside
+* [x] aside
 * [ ] md submenu
 * [ ] inbox submenu
 * [x] navbar server hover left
