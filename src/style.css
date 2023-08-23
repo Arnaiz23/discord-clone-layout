@@ -780,9 +780,16 @@ svg {
   width: 600px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 30px;
   overflow: hidden;
   border-radius: 5px;
+  min-height: 450px;
+  grid-template-rows: 86px 1fr;
+  display: none;
+}
+
+.header-content-inbox-modal-active {
+  display: grid;
 }
 
 .header-content-inbox-modal > header {
@@ -872,4 +879,23 @@ svg {
 .header-content-inbox-modal-list > li:hover:not(.header-content-inbox-modal-list-active) {
   background-color: var(--background-hover);
   color: #ddd;
+}
+
+.header-content-inbox-modal > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.header-content-inbox-modal > section > p {
+  width: 80%;
+  font-size: 12px;
+  text-align: center;
+}
+
+.header-content-inbox-modal > section > p > span {
+  color: var(--green);
 }
