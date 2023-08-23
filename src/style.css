@@ -437,14 +437,13 @@ svg {
 
 .messages-row-friends-user-left-image > span {
   position: absolute;
-  right: 2px;
-  bottom: 0;
-
+  right: 0px;
+  bottom: -3px;
   aspect-ratio: 1/1;
-  width: 10px;
-
+  width: 16px;
   background-color: var(--green);
   border-radius: 100%;
+  border: 3px solid #2b2d31;
 }
 
 .messages-row-friends-user > svg {
@@ -696,6 +695,11 @@ svg {
   place-items: center;
 }
 
+#inbox {
+  display: grid;
+  place-items: center;
+}
+
 .header-content-popup {
   pointer-events: none;
 
@@ -865,7 +869,7 @@ svg {
 }
 
 .header-content-inbox-modal-list > li {
-  width: max-content; 
+  width: max-content;
   padding-inline: 8px;
   padding-block: 3px;
   border-radius: 5px;
@@ -876,7 +880,8 @@ svg {
   color: #fff;
 }
 
-.header-content-inbox-modal-list > li:hover:not(.header-content-inbox-modal-list-active) {
+.header-content-inbox-modal-list
+  > li:hover:not(.header-content-inbox-modal-list-active) {
   background-color: var(--background-hover);
   color: #ddd;
 }
