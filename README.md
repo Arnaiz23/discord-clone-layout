@@ -19,6 +19,10 @@ Repositorie where I create the discord layout with HTML, CSS and JS.
 ### Main & aside
 
 ![Discord layout main aside preview](./previews-gh/discord-layout-main-aside.png)
+ 
+### Inbox modal
+
+![Discord layout inbox modal preview](./previews-gh/discord-layout-inbox-modal.png)
 
 ## Missing
 
