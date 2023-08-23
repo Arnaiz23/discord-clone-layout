@@ -16,6 +16,10 @@ Repositorie where I create the discord layout with HTML, CSS and JS.
 
 ![Discord layout header preview](./previews-gh/discord-layout-header.png)
 
+### Main & aside
+
+![Discord layout main aside preview](./previews-gh/discord-layout-main-aside.png)
+
 ## Missing
 
 * [ ] footer messages icons silent
@@ -23,9 +27,9 @@ Repositorie where I create the discord layout with HTML, CSS and JS.
 * [x] chat user messages
 * [x] header
 * [x] main
-* [ ] main user more
 * [x] aside
 * [ ] md submenu
 * [ ] inbox submenu
 * [x] navbar server hover left
 * [x] messages create md hover
+* [ ] Responsive
