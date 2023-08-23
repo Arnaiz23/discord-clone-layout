@@ -773,3 +773,103 @@ svg {
   color: #999;
   text-align: center;
 }
+
+/* Modals */
+.header-content-inbox-modal {
+  background-color: #2b2d31;
+  width: 600px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.header-content-inbox-modal > header {
+  background-color: #1e1f22;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10px;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.header-content-inbox-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-inline: 10px;
+}
+
+.header-content-inbox-modal-header-inbox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-content-inbox-modal-header-inbox > svg {
+  color: #fff;
+}
+
+.header-content-inbox-modal-header-inbox > h4 {
+  font-size: 20px;
+  color: #ddd;
+}
+
+.header-content-inbox-modal-header-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2b2d31;
+  border-radius: 15px;
+  padding-inline: 10px;
+  padding-block: 2px;
+  gap: 3px;
+}
+
+.header-content-inbox-modal-header-user > svg {
+  width: 20px;
+}
+
+.header-content-inbox-modal-header-user > span {
+  width: 20px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: #41434a;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  color: #fff;
+}
+
+.header-content-inbox-modal-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  gap: 5px;
+  padding-inline: 20px;
+}
+
+.header-content-inbox-modal-list > li {
+  width: max-content; 
+  padding-inline: 8px;
+  padding-block: 3px;
+  border-radius: 5px;
+}
+
+.header-content-inbox-modal-list-active {
+  background-color: #3b3c43;
+  color: #fff;
+}
+
+.header-content-inbox-modal-list > li:hover:not(.header-content-inbox-modal-list-active) {
+  background-color: var(--background-hover);
+  color: #ddd;
+}
