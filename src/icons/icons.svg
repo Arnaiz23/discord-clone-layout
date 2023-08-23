@@ -42,4 +42,7 @@
   <symbol id="wheel" viewBox="0 0 24 24">
     <path fill="currentColor" fill-rule="evenodd" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Zm6-9h-3a3 3 0 0 1-1 1l2 3a6 6 0 0 0 2-4Zm-4 5-1-3a3 3 0 0 1-2 0l-1 3a6 6 0 0 0 2 0h2Zm-6-1 2-3a3 3 0 0 1-1-1H6a6 6 0 0 0 2 4Zm10-6h-3a3 3 0 0 0-1-1l2-3a6 6 0 0 1 2 4Zm-4-5a6 6 0 0 0-2 0h-2l1 3a3 3 0 0 1 2 0l1-3Zm-4 4L8 7a6 6 0 0 0-2 4h3l1-1Z" clip-rule="evenodd"/>
   </symbol>
+  <symbol id="x">
+    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6 6 18M6 6l12 12"/>
+  </symbol>
 </svg>

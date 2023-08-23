@@ -382,12 +382,75 @@ svg {
   opacity: 100%;
 }
 
-.messages-row-friends:hover {
+.messages-row-friends > header:hover {
   color: #ddd;
 }
 
-.messages-row-friends:hover svg {
+.messages-row-friends > header:hover svg {
   stroke: #ddd;
+}
+
+.messages-row-friends-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+  padding-block: 5px;
+  padding-inline: 10px;
+
+  font-weight: 600;
+
+  margin-inline: 10px;
+  border-radius: 5px;
+}
+
+.messages-row-friends-user-left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.messages-row-friends-user-left-image {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.messages-row-friends-user-left-image > img {
+  aspect-ratio: 1/1;
+  width: 35px;
+  border-radius: 100%;
+}
+
+.messages-row-friends-user-left-image > span {
+  position: absolute;
+  right: 2px;
+  bottom: 0;
+
+  aspect-ratio: 1/1;
+  width: 10px;
+
+  background-color: var(--green);
+  border-radius: 100%;
+}
+
+.messages-row-friends-user > svg {
+  opacity: 0%;
+  transition: opacity ease 0.3s;
+}
+
+.messages-row-friends-user:hover {
+  background-color: var(--background-hover);
+}
+
+.messages-row-friends-user:hover > svg {
+  opacity: 1;
+}
+
+.messages-row-friends-user > svg:hover {
+  color: #fff;
 }
 
 .messages-footer {
