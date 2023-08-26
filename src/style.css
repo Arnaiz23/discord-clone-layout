@@ -26,9 +26,11 @@ svg {
 }
 
 .container-grid {
+  overflow: hidden;
   display: grid;
   grid-template: "nav messages header header" 50px "nav messages main aside" 1fr / 75px 240px 1200px 1fr;
-  width: 100%;
+
+  width: 100vw;
   min-height: 100dvh;
 }
 
@@ -1020,4 +1022,28 @@ svg {
 
 .modal-new-md-list-item > div > p:last-of-type {
   font-size: 15px;
+}
+
+.modal-new-md-line {
+  width: 90%;
+  margin-inline: auto;
+  border-top: 1px solid #393b40;
+}
+
+.modal-new-md-create-button {
+  cursor: pointer;
+
+  padding: 10px;
+
+  font-weight: 600;
+
+  background-color: #5865f2;
+  border: none;
+  border-radius: 5px;
+
+  transition: transform ease 0.9s;
+}
+
+.modal-new-md-create-button:active {
+  transform: scale(0.9);
 }
