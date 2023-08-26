@@ -121,12 +121,77 @@
             <header>
               <h3>MENSAJES DIRECTOS</h3>
               <div class="messages-row-friends-icon">
-                <svg>
-                  <use href="./src/icons/icons.svg#plus" />
-                </svg>
+                <div id="messages-md-button">
+                  <svg>
+                    <use href="./src/icons/icons.svg#plus" />
+                  </svg>
+                </div>
                 <div class="messages-row-friends-icon-popup">
                   <span class="triangulo-bottom"></span>
                   <p>Crear MD</p>
+                </div>
+                <div class="modal-new-md" id="modal-md-aside">
+                  <header>
+                    <h4 class="modal-new-md-title">Seleccionar amigos</h4>
+                    <p class="modal-new-md-subtitle">
+                      Puedes añadir 9 amigos más.
+                    </p>
+                  </header>
+                  <input
+                    type="text"
+                    class="modal-new-md-input"
+                    placeholder="Escribe el nombre de usuario de un amigo"
+                  />
+                  <ul class="modal-new-md-list">
+                    <li class="modal-new-md-list-item">
+                      <div>
+                        <div class="modal-new-md-list-item-image">
+                          <img
+                            src="/images/lena-profile.jpg"
+                            alt="lena profile"
+                          />
+                          <span></span>
+                        </div>
+                        <p>Lena</p>
+                        <p>Lena#123</p>
+                      </div>
+                      <label for="friend">
+                        <input type="checkbox" id="friend" />
+                      </label>
+                    </li>
+                    <li class="modal-new-md-list-item">
+                      <div>
+                        <div class="modal-new-md-list-item-image">
+                          <img
+                            src="/images/ange-profile.png"
+                            alt="ange profile"
+                          />
+                          <span></span>
+                        </div>
+                        <p>Lena</p>
+                        <p>Lena#123</p>
+                      </div>
+                      <label for="friend">
+                        <input type="checkbox" id="friend" />
+                      </label>
+                    </li>
+                    <li class="modal-new-md-list-item">
+                      <div>
+                        <div class="modal-new-md-list-item-image">
+                          <img
+                            src="/images/tanya-profile.jpg"
+                            alt="tany profile"
+                          />
+                          <span></span>
+                        </div>
+                        <p>Lena</p>
+                        <p>Lena#123</p>
+                      </div>
+                      <label for="friend">
+                        <input type="checkbox" id="friend" />
+                      </label>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </header>
@@ -220,12 +285,69 @@
         </div>
         <div class="header-content">
           <div class="header-content-md">
-            <svg class="header-content-icon-popup">
-              <use href="./src/icons/icons.svg#message" />
-            </svg>
+            <div
+              id="md-header-button"
+              style="display: grid; place-items: center"
+            >
+              <svg class="header-content-icon-popup">
+                <use href="./src/icons/icons.svg#message" />
+              </svg>
+            </div>
             <div class="header-content-popup">
               <span class="triangulo-top"></span>
               <p>Nuevo grupo de MD</p>
+            </div>
+            <div class="modal-new-md" id="modal-md-header">
+              <header>
+                <h4 class="modal-new-md-title">Seleccionar amigos</h4>
+                <p class="modal-new-md-subtitle">Puedes añadir 9 amigos más.</p>
+              </header>
+              <input
+                type="text"
+                class="modal-new-md-input"
+                placeholder="Escribe el nombre de usuario de un amigo"
+              />
+              <ul class="modal-new-md-list">
+                <li class="modal-new-md-list-item">
+                  <div>
+                    <div class="modal-new-md-list-item-image">
+                      <img src="/images/lena-profile.jpg" alt="lena profile" />
+                      <span></span>
+                    </div>
+                    <p>Lena</p>
+                    <p>Lena#123</p>
+                  </div>
+                  <label for="friend">
+                    <input type="checkbox" id="friend" />
+                  </label>
+                </li>
+                <li class="modal-new-md-list-item">
+                  <div>
+                    <div class="modal-new-md-list-item-image">
+                      <img src="/images/ange-profile.png" alt="ange profile" />
+                      <span></span>
+                    </div>
+                    <p>Lena</p>
+                    <p>Lena#123</p>
+                  </div>
+                  <label for="friend">
+                    <input type="checkbox" id="friend" />
+                  </label>
+                </li>
+                <li class="modal-new-md-list-item">
+                  <div>
+                    <div class="modal-new-md-list-item-image">
+                      <img src="/images/tanya-profile.jpg" alt="tany profile" />
+                      <span></span>
+                    </div>
+                    <p>Lena</p>
+                    <p>Lena#123</p>
+                  </div>
+                  <label for="friend">
+                    <input type="checkbox" id="friend" />
+                  </label>
+                </li>
+              </ul>
             </div>
           </div>
           <span class="header-content-line"></span>

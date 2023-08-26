@@ -335,9 +335,10 @@ svg {
 .messages-row-friends > section {
   display: flex;
   flex-direction: column;
+  gap: 5px;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 5px;
+
   width: 100%;
   height: 100%;
 }
@@ -392,7 +393,8 @@ svg {
   opacity: 100%;
 }
 
-.messages-row-friends > header:hover {
+.messages-row-friends > header:hover > h3,
+.messages-row-friends-icon > header:hover svg {
   color: #ddd;
 }
 
@@ -401,13 +403,14 @@ svg {
 }
 
 .messages-row-friends-user {
+  cursor: pointer;
+
   display: flex;
-  width: 90%;
-  margin-inline: auto;
   align-items: center;
   justify-content: space-between;
 
-  cursor: pointer;
+  width: 90%;
+  margin-inline: auto;
   padding-block: 5px;
   padding-inline: 10px;
 
@@ -437,13 +440,15 @@ svg {
 
 .messages-row-friends-user-left-image > span {
   position: absolute;
-  right: 0px;
+  right: 0;
   bottom: -3px;
+
   aspect-ratio: 1/1;
   width: 16px;
+
   background-color: var(--green);
-  border-radius: 100%;
   border: 3px solid #2b2d31;
+  border-radius: 100%;
 }
 
 .messages-row-friends-user > svg {
@@ -456,7 +461,7 @@ svg {
 }
 
 .messages-row-friends-user:hover > svg {
-  opacity: 1;
+  opacity: 100%;
 }
 
 .messages-row-friends-user > svg:hover {
@@ -780,16 +785,19 @@ svg {
 
 /* Modals */
 .header-content-inbox-modal {
-  background-color: #2b2d31;
-  width: 600px;
   position: absolute;
-  right: 0;
   top: 30px;
+  right: 0;
+
   overflow: hidden;
-  border-radius: 5px;
-  min-height: 450px;
-  grid-template-rows: 86px 1fr;
   display: none;
+  grid-template-rows: 86px 1fr;
+
+  width: 600px;
+  min-height: 450px;
+
+  background-color: #2b2d31;
+  border-radius: 5px;
 }
 
 .header-content-inbox-modal-active {
@@ -797,30 +805,33 @@ svg {
 }
 
 .header-content-inbox-modal > header {
-  background-color: #1e1f22;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 10px;
   gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 100%;
+  padding-top: 10px;
   padding-bottom: 10px;
+
+  background-color: #1e1f22;
 }
 
 .header-content-inbox-modal-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+
   width: 100%;
   padding-inline: 10px;
 }
 
 .header-content-inbox-modal-header-inbox {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .header-content-inbox-modal-header-inbox > svg {
@@ -834,13 +845,15 @@ svg {
 
 .header-content-inbox-modal-header-user {
   display: flex;
-  justify-content: space-between;
+  gap: 3px;
   align-items: center;
+  justify-content: space-between;
+
+  padding-block: 2px;
+  padding-inline: 10px;
+
   background-color: #2b2d31;
   border-radius: 15px;
-  padding-inline: 10px;
-  padding-block: 2px;
-  gap: 3px;
 }
 
 .header-content-inbox-modal-header-user > svg {
@@ -848,51 +861,56 @@ svg {
 }
 
 .header-content-inbox-modal-header-user > span {
-  width: 20px;
-  aspect-ratio: 1/1;
-  border-radius: 100%;
-  background-color: #41434a;
   display: grid;
   place-items: center;
+
+  aspect-ratio: 1/1;
+  width: 20px;
+
   font-size: 12px;
   color: #fff;
+
+  background-color: #41434a;
+  border-radius: 100%;
 }
 
 .header-content-inbox-modal-list {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  list-style: none;
   gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
   padding-inline: 20px;
+
+  list-style: none;
 }
 
 .header-content-inbox-modal-list > li {
   width: max-content;
-  padding-inline: 8px;
   padding-block: 3px;
+  padding-inline: 8px;
   border-radius: 5px;
 }
 
 .header-content-inbox-modal-list-active {
-  background-color: #3b3c43;
   color: #fff;
+  background-color: #3b3c43;
 }
 
-.header-content-inbox-modal-list
-  > li:hover:not(.header-content-inbox-modal-list-active) {
-  background-color: var(--background-hover);
+.header-content-inbox-modal-list > li:hover:not(.header-content-inbox-modal-list-active) {
   color: #ddd;
+  background-color: var(--background-hover);
 }
 
 .header-content-inbox-modal > section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100%;
+  justify-content: center;
+
   width: 100%;
+  height: 100%;
 }
 
 .header-content-inbox-modal > section > p {
@@ -903,4 +921,103 @@ svg {
 
 .header-content-inbox-modal > section > p > span {
   color: var(--green);
+}
+
+.modal-new-md {
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  right: 0;
+
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+
+  width: 460px;
+  padding: 15px;
+
+  background-color: #313338;
+  border: 1px solid #242628;
+  border-radius: 5px;
+  box-shadow: 7px 8px 5px -4px #222;
+}
+
+.messages-row-friends-icon > .modal-new-md {
+  left: 0;
+}
+
+.modal-new-md-active {
+  display: flex;
+}
+
+.modal-new-md-title {
+  font-size: 20px;
+  color: #fff;
+}
+
+.modal-new-md-subtitle {
+  font-size: 12px;
+}
+
+.modal-new-md-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.modal-new-md-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.modal-new-md-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 5px;
+}
+
+.modal-new-md-list-item > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.modal-new-md-list-item-image {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 40px;
+}
+
+.modal-new-md-list-item-image > img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.modal-new-md-list-item-image > span {
+  position: absolute;
+  right: 1px;
+  bottom: -1px;
+
+  aspect-ratio: 1/1;
+  width: 15px;
+
+  background-color: var(--green);
+  border: 3.5px solid #313338;
+  border-radius: 50%;
+}
+
+.modal-new-md-list-item > div > p:first-of-type {
+  font-weight: bold;
+  color: #fff;
+}
+
+.modal-new-md-list-item > div > p:last-of-type {
+  font-size: 15px;
 }
