@@ -1,6 +1,8 @@
 # Discord clone layout
 
-Repositorie where I create the discord layout with HTML, CSS and JS.
+Repositorie where I create the discord layout with HTML, CSS and JS. 
+
+**Url**: https://discord-arnaizdev.netlify.app
 
 ## Previews
 
@@ -24,6 +26,14 @@ Repositorie where I create the discord layout with HTML, CSS and JS.
 
 ![Discord layout inbox modal preview](./previews-gh/discord-layout-inbox-modal.png)
 
+### MD modal
+
+![Discord layout md modal preview](./previews-gh/discord-layout-md-modal.png)
+
+### Responsive
+
+![Discord layout responsive preview](./previews-gh/discord-layout-responsive.png)
+
 ## Missing
 
 * [ ] footer messages icons silent
@@ -38,4 +48,4 @@ Repositorie where I create the discord layout with HTML, CSS and JS.
 * [x] messages create md hover
 * [x] Responsive
 * [x] Checkbox style
-* [ ] Deploy and add to the portfolio
+* [x] Deploy and add to the portfolio
