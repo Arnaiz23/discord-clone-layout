@@ -1088,3 +1088,15 @@ svg {
     display: none;
   }
 }
+
+@media screen and (max-width: 746px) {
+  #modal-md-aside {
+    left: calc(3vw * -1);
+  }
+}
+
+@media screen and (max-width: 722px) {
+  #modal-md-aside {
+    left: -50px;
+  }
+}

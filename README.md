@@ -38,3 +38,4 @@ Repositorie where I create the discord layout with HTML, CSS and JS.
 * [x] messages create md hover
 * [x] Responsive
 * [ ] Checkbox style
+* [ ] Deploy and add to the portfolio
