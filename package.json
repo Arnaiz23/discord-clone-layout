@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "stylelint": "npx stylelint '**/*.css' --fix",
-    "deploy": "netlify deploy --prod"
+    "deploy": "netlify deploy --auth $NETLIFY_AUTH_TOKEN --site discord-arnaizdev --prod"
   },
   "devDependencies": {
     "stylelint": "^15.10.3",
