@@ -355,7 +355,7 @@ svg {
   margin: 15px auto;
 }
 
-.messages-row-friends > header > h3 {
+.messages-row-friends > header > h2 {
   font-size: 12px;
   font-weight: bold;
 }
@@ -395,7 +395,7 @@ svg {
   opacity: 100%;
 }
 
-.messages-row-friends > header:hover > h3,
+.messages-row-friends > header:hover > h2,
 .messages-row-friends-icon > header:hover svg {
   color: #ddd;
 }
@@ -769,7 +769,7 @@ svg {
   border-left: 1px solid #444;
 }
 
-.aside-container > h3 {
+.aside-container > h2 {
   font-size: 19px;
 }
 
@@ -841,7 +841,7 @@ svg {
   color: #fff;
 }
 
-.header-content-inbox-modal-header-inbox > h4 {
+.header-content-inbox-modal-header-inbox > h3 {
   font-size: 20px;
   color: #ddd;
 }
@@ -901,8 +901,7 @@ svg {
   background-color: #3b3c43;
 }
 
-.header-content-inbox-modal-list
-  > li:hover:not(.header-content-inbox-modal-list-active) {
+.header-content-inbox-modal-list > li:hover:not(.header-content-inbox-modal-list-active) {
   color: #ddd;
   background-color: var(--background-hover);
 }
@@ -1056,8 +1055,10 @@ svg {
 
 .modal-new-md-label {
   position: relative;
+
   width: 20px;
   height: 20px;
+
   border: 1px solid #888;
   border-radius: 5px;
 }
@@ -1066,20 +1067,24 @@ svg {
   border-color: #949cf7;
 }
 
-.checkmark:after {
+.checkmark::after {
   content: "";
+
   position: absolute;
-  display: none;
-  left: 6px;
   top: 3px;
+  left: 6px;
+  transform: rotate(45deg);
+
+  display: none;
+
   width: 3px;
   height: 8px;
+
   border: solid #5865f2;
   border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
 }
 
-.modal-new-md-checkbox:checked + .modal-new-md-label > .checkmark:after {
+.modal-new-md-checkbox:checked + .modal-new-md-label > .checkmark::after {
   display: block;
 }
 
